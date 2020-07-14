@@ -8,7 +8,7 @@
 
 ### Description
 
-Import data in a CSV format from three cities in The US (Chicago, New York City, Washington)and let the user to interact and explore the data showing him some descriptive statistics and raw data.
+Import data in a CSV format, using Python, from three cities in The US (Chicago, New York City, Washington), let the user to interact and explore the data showing him some descriptive statistics and raw data.
 
 ### Files used
 bikeshare.py
