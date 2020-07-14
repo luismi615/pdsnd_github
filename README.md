@@ -1,15 +1,21 @@
 ### Date created
-Include the date you created this project and README file.
+**Project Created:** 06/21/2020
+**README Created:** 07/14/2020
 
 ### Project Title
-Replace the Project Title
+
+**Explore US bikeshare data**
 
 ### Description
-Describe what your project is about and what it does
+
+Import data in a CSV format from three cities in The US (Chicago, New York City, Washington)and let the user to interact and explore the data showing him some descriptive statistics and raw data.
 
 ### Files used
-Include the files used
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+This project is created to complete the Udacity's Nanodegree Program *Programming for Data Science with Python*, in which I used the template and the csv data sheets provided.
