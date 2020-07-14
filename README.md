@@ -7,7 +7,6 @@
 **Explore US bikeshare data**
 
 ### Description
-
 Import data in a CSV format, using Python, from three cities in The US (Chicago, New York City, Washington), let the user to interact and explore the data showing him some descriptive statistics and raw data.
 
 ### Files used
@@ -15,6 +14,9 @@ bikeshare.py
 chicago.csv
 new_york_city.csv
 washington.csv
+
+### Software required
+This project was coded using Python 3
 
 ### Credits
 
