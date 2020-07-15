@@ -9,6 +9,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
+    This function takes as input from the user raw filter and returns the filters in the rigth format
+
     Asks user to specify a city, month, and day to analyze.
 
     Returns:
@@ -48,6 +50,8 @@ def get_filters():
 
 def load_data(city, month, day):
     """
+    This function takes the previous fliters and load only the data that match with them. Returns this data.
+
     Loads data for the specified city and filters by month and day if applicable.
 
     Args:
@@ -180,7 +184,7 @@ def user_stats(df):
         print('\nMost common year of birth from Users\t', int(df['Birth Year'].mode()[0]))
     except:
         print('\nNo data available for user\'s year of birth\n')
-        
+
     #Display individual raw data
     print('\n Let\'s see some individual raw data\n')
     rdt = 'yes'
@@ -194,26 +198,27 @@ def user_stats(df):
             except:
                 print('I already displayed all the individual data, try another filter.')
                 break
-        rdt = input('Would you like to see more individual data? (Yes, No)').lower()    
+        rdt = input('Would you like to see more individual data? (Yes, No)').lower()
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
-    
+
+
 
 
 def main():
+    
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        
+
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-       
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
