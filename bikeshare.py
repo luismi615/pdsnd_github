@@ -40,7 +40,7 @@ def get_filters():
     while day not in l_days:
         day = input('Please type the day you would like to explore the data or all of them (All, Mon, Tue, Wed, Thr, Fri, Sat, Sun )').lower()
         if day not in l_days:
-            print('That\'s not a valid day, try again!')
+            print('Wow!!! You typed {} and that\'s not a valid day, please try again!'.format(day))
 
     print('-'*40)
     return city, month, day
