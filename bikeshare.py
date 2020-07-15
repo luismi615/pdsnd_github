@@ -24,7 +24,7 @@ def get_filters():
         if city in ['chicago','new york city','washington']:
             vcity = True
         else:
-            print('That\'s not a valid city, try again!')
+            print('Wow!!! you typed {} and that\'s not a valid city, please try again!'.format(city))
 
     # get user input for month (all, january, february, ... , june)
     month = None
