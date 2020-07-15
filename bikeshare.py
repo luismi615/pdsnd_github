@@ -26,7 +26,7 @@ def get_filters():
         if city in ['chicago','new york city','washington']:
             vcity = True
         else:
-            print('That\'s not a valid city, try again!')
+            print('Wow!!! you typed {} and that\'s not a valid city, please try again!'.format(city))
 
     # get user input for month (all, january, february, ... , june)
     month = None
@@ -34,7 +34,7 @@ def get_filters():
     while month not in l_months:
         month = input('Please type the month you would like to explore the data or all of them (All, Jan, Feb, Mar, Apr, May, Jun)').lower()
         if month not in l_months:
-            print('That\'s not a valid month, try again!')
+            print('Wow!!! you typed {} and That\'s not a valid month, please try again!'.format(month))
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day = None
@@ -42,7 +42,7 @@ def get_filters():
     while day not in l_days:
         day = input('Please type the day you would like to explore the data or all of them (All, Mon, Tue, Wed, Thr, Fri, Sat, Sun )').lower()
         if day not in l_days:
-            print('That\'s not a valid day, try again!')
+            print('Wow!!! You typed {} and that\'s not a valid day, please try again!'.format(day))
 
     print('-'*40)
     return city, month, day
